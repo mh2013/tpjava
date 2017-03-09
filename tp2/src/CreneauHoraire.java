@@ -4,10 +4,10 @@ import java.util.Scanner;
  * @author M-H
  */
 public class CreneauHoraire implements Cloneable  { //on fait implementer cloneable pour pouvoir utiliser la methode clone
-    private int jour;
-    private int heure;
-    private int minute;
-    private int duree;
+    protected int jour;
+    protected int heure;
+    protected int minute;
+    protected int duree;
     
     //constructeur
     public CreneauHoraire(int j, int h, int m, int d){

@@ -9,7 +9,7 @@ public class HeritageEtInterfaces {
      */
     public static void main(String[] args) {
         CreneauHoraire c1 = new CreneauHoraire(87,10,00,1);
-        CreneauHoraire c2 = new CreneauHoraire(87,10,00,1);
+        CreneauHoraireComparable c2 = new CreneauHoraireComparable(87,10,00,1);
         CreneauHoraire c3 = (CreneauHoraire) c1.clone();
         
        boolean b = c1==c2; //compare les adresses memoire
@@ -19,6 +19,8 @@ public class HeritageEtInterfaces {
        System.out.println(a); //true
        System.out.println(d); //
        /*c1.saisieCreneau();*/
+       int valcomparaison = c2.compareTo(c1);
+       System.out.println(valcomparaison);
     }
     
 }
