@@ -25,15 +25,17 @@ public class HeritageEtInterfaces {
        /*c1.saisieCreneau();*/
        int valcomparaison = c2.compareTo(c1);
        System.out.println(valcomparaison);
-       if(liste.add(c2) || liste.add(c4)){
+       /*if(liste.add(c2) || liste.add(c4)){
            System.out.println("ajout reussi");
-       }
-       System.out.println(liste.get(0).getClass());
-       /*Collections.sort(liste);
-       int i;
-       for(i=0;i<=liste.size();i++){
-           System.out.println(liste.get(i).duree);
        }*/
+       liste.add(c4);
+       liste.add(c2);
+       System.out.println(liste.size());
+       liste.trie();
+       int i;
+       for(i=0;i<liste.size();i++){
+           System.out.println(liste.get(i).duree);
+       }
     }
     
 }
